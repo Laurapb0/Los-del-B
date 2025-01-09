@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportes e Informes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Reportes e Informes</h1>
+    <form class="mt-4">
+      <div class="mb-3">
+        <label for="paciente" class="form-label">Paciente</label>
+        <input type="text" class="form-control" id="paciente" placeholder="Ingrese el nombre del paciente">
+      </div>
+      <div class="mb-3">
+        <label for="informe" class="form-label">Descripción del Informe</label>
+        <textarea class="form-control" id="informe" rows="3" placeholder="Escriba el informe"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Guardar Informe</button>
+    </form>
+    <hr>
+    <h2 class="mt-4">Lista de Informes</h2>
+    <table class="table mt-3">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Paciente</th>
+          <th>Descripción</th>
+          <th>Fecha</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>María López</td>
+          <td>Informe de Rayos X</td>
+          <td>2025-01-05</td>
+          <td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
