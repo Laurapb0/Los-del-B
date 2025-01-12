@@ -12,11 +12,17 @@ public class Factura {
 
     private String servicio;
 
-    @Column(precision = 10, scale = 2)
+    @Column(precision = 10)
     private Double monto;
 
     @Column(columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime fecha;
+
+    // Método para asignar la fecha antes de persistir
+    @PrePersist
+    protected void onCreate() {
+        this.fecha = LocalDateTime.now();
+    }
 
     // Getters y Setters
     public Long getIdFactura() {
